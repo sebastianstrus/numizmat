@@ -26,11 +26,11 @@ h4 {
 
 html {
   position: relative;
-  background-color: #111111;
+  background-color: #222222;
 }
 
 body {
-  background-color: #111111;
+  background-color: #222222;
   margin-bottom: 50px;
 
 }
@@ -48,7 +48,7 @@ body {
   margin-bottom: 8px;
   border: 0;
   height: 5px;
-  background-image: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(240, 240, 240, 0), rgba(240, 240, 240, 0.75), rgba(0, 0, 0, 0));
 }
 
 #small_separator {
@@ -66,25 +66,48 @@ body {
   height: 2px;
   background-color: silver;
 }
-.photo {
+
+.section-gold .photo {
   width: 64px;
   height: 64px;
   border: 1px solid gold;
   border-radius: 5px;
-}
 
-.bigphoto {
+}
+.section-gold .bigphoto {
   position: absolute;
   width: 0px;
   -webkit-transition:width 0.3s linear 0s;
   transition:width 0.3s linear 0s;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin-left: 2px;
 }
 
-.photo:hover + .bigphoto {
+.section-silver .photo {
+  width: 64px;
+  height: 64px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+.section-silver .bigphoto {
+  position: absolute;
+  width: 0px;
+  -webkit-transition:width 0.3s linear 0s;
+  transition:width 0.3s linear 0s;
+  z-index: 10;
+  border-radius: 20px;
+  margin-left: 2px;
+}
+
+.section-gold .photo:hover + .bigphoto {
   width: 512px;
-  border: 1px solid gold;
+  border: 2px solid gold;
+}
+
+.section-silver .photo:hover + .bigphoto {
+  width: 512px;
+  border: 2px solid silver;
 }
 
 p {
@@ -154,7 +177,7 @@ p {
   }
 }
 .slider {
-  background: white;
+  background: transparent;
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -162,8 +185,8 @@ p {
   width: 1000px;
 }
 .slider::before, .slider::after {
-  background: -webkit-gradient(linear, left top, right top, from(#111111), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, #111111 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#222222), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #222222 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
