@@ -3,7 +3,7 @@
   font-family: 'Bitter', serif;
   margin-top: 40px;
   margin-left: 30px;
-  color: #555555;
+  color: #eeeeee;
   font-size: 22px;
 }
 
@@ -11,7 +11,7 @@
   font-family: 'Bitter', serif;
   margin-top: 70px;
   margin-left: 30px;
-  color: #555555;
+  color: #eeeeee;
   font-size: 22px;
 }
 
@@ -24,7 +24,7 @@ h4 {
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #555555;
+  color: #eeeeee;
 }
 
 
@@ -32,19 +32,20 @@ h4 {
 html {
   position: relative;
   min-height: 100%;
+  background-color: #222222;
 }
 
 body {
   background-color: white;
   margin-bottom: 50px;
-
+  background-color: #222222;
 }
 
 #big_gold_separator {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   border: 0;
-  height: 5px;
+  height: 3px;
   background-image: linear-gradient(to right, rgba(255, 215, 0, 0), rgba(255, 215, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -52,7 +53,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
   border: 0;
-  height: 5px;
+  height: 3px;
   background-image: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -72,28 +73,55 @@ body {
   background-color: silver;
 }
 
-.photo {
+.section-gold .photo {
   width: 64px;
   height: 64px;
+  border: 1px solid gold;
+  border-radius: 5px;
 }
 
-.bigphoto {
+.section-gold .bigphoto {
   position: absolute;
   width: 0px;
   -webkit-transition:width 0.3s linear 0s;
   transition:width 0.3s linear 0s;
-  z-index: 10
+  z-index: 10;
+  border-radius: 20px;
+  margin-left: 2px;
 }
 
-.photo:hover + .bigphoto {
+.section-silver .photo {
+  width: 64px;
+  height: 64px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.section-silver .bigphoto {
+  position: absolute;
+  width: 0px;
+  -webkit-transition:width 0.3s linear 0s;
+  transition:width 0.3s linear 0s;
+  z-index: 10;
+  border-radius: 20px;
+  margin-left: 2px;
+}
+
+.section-gold .photo:hover + .bigphoto {
   width: 256px;
+  border: 2px solid gold;
+}
+
+.section-silver .photo:hover + .bigphoto {
+  width: 256px;
+  border: 2px solid silver;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   margin: 20px;
-  color: #555555;
+  color: #eeeeee;
 }
 
 .main {
@@ -102,8 +130,11 @@ p {
 
 #title {
   font-family: 'Ewert', cursive;
-  font-size: 40px;
-  text-align: center;
+  font-size: 24px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 16px;
   color: gold;
 }
 
@@ -149,7 +180,7 @@ p {
   }
 }
 .slider {
-  background: white;
+  background: #222222;
   height: 50px;
   margin: auto;
   overflow: hidden;
@@ -157,8 +188,8 @@ p {
   width: 320px;
 }
 .slider::before, .slider::after {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#222222), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #222222 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 50px;
   position: absolute;
