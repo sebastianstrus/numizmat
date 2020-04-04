@@ -240,3 +240,10 @@ p {
   right: 0;
   position: absolute;
 }
+
+#welcome-text {
+  font-size: 13px;
+  color: #eeeeee;
+  text-align: center;
+  margin-top: 20px;
+}
