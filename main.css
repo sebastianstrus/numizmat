@@ -32,6 +32,7 @@ html {
 body {
   background-color: #222222;
   margin-bottom: 50px;
+  border: 1px solid #222222;
 
 }
 
@@ -147,8 +148,10 @@ p {
 }
 
 .contact_icon:hover {
-  transform: scale(1.1); 
+  transform: scale(1.06);   
+  /* box-shadow: 5px 5px 10px red; */
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+
 }
 
 
@@ -214,4 +217,9 @@ p {
 .slide > img {
   width: 100px;
   height: 100px;
+}
+
+.nav-contact {
+  float: right;
+  margin-right: 20px;
 }
