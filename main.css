@@ -36,7 +36,7 @@ body {
 
 body::after {
   content: "";
-  background: url("images/coins_background2.gif");
+  background: url("images/background.gif");
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -122,8 +122,12 @@ body::after {
 
 p {
   font-family: 'Roboto', sans-serif;
-  margin: 20px;
+  margin: 8px;
   color: #eeeeee;
+}
+
+span {
+  color: gold;
 }
 
 .main {
@@ -164,6 +168,8 @@ p {
 .contact_icon:hover {
   transform: scale(1.06);   
 }
+
+
 
 
 
