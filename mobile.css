@@ -131,7 +131,7 @@ body::after {
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  margin: 20px;
+  margin: 8px;
   color: #eeeeee;
 }
 
@@ -242,6 +242,7 @@ p {
 }
 
 #welcome-text {
+  font-family: 'Gotu', sans-serif;
   font-size: 13px;
   color: #eeeeee;
   text-align: center;
