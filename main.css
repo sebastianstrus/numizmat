@@ -30,10 +30,20 @@ html {
 }
 
 body {
-  background-color: #222222;
-  margin-bottom: 50px;
+  background-color: transparent;
   border: 1px solid #222222;
+}
 
+body::after {
+  content: "";
+  background: url("images/coins_background2.gif");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 #big_gold_separator {
@@ -134,12 +144,16 @@ p {
   color: gold;
 }
 
+.nav-contact {
+  float: right;
+  margin-right: 20px;
+}
+
 #contact_icons {
   margin: auto;
   width: 208px;
   height: 64px;
 }
-
 
 .contact_icon {
   width: 32px;
@@ -149,9 +163,6 @@ p {
 
 .contact_icon:hover {
   transform: scale(1.06);   
-  /* box-shadow: 5px 5px 10px red; */
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-
 }
 
 
@@ -216,23 +227,6 @@ p {
 .slide > img {
   width: 100px;
   height: 100px;
-}
-
-.nav-contact {
-  float: right;
-  margin-right: 20px;
-}
-
-
-#background::after {
-  content: "";
-  background: url("images/coins_background2.gif");
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
 }
 
 #welcome-text {
