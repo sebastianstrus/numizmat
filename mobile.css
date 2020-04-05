@@ -42,13 +42,14 @@ body {
 
 body::after {
   content: "";
-  background: url("images/coins_background2.gif");
+  background: url("images/background.gif");
   opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
+  background-attachment: fixed;
   z-index: -1;   
 }
 
