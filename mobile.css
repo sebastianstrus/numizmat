@@ -142,7 +142,7 @@ p {
 
 #title {
   font-family: 'Ewert', cursive;
-  font-size: 26px;
+  font-size: 28px;
   text-align: left;
   margin-top: 20px;
   margin-left: 10px;
@@ -152,6 +152,7 @@ p {
 
 .nav-contact {
   float: right;
+  margin-top: 6px;
   margin-right: 8px;
 }
 
@@ -162,9 +163,9 @@ p {
 }
 
 .nav-contact .contact_icon {
-  width: 26px;
-  height: 26px;
-  margin: 16px 4px 16px 4px;
+  width: 22px;
+  height: 22px;
+  margin: 16px 4px 16px 8px;
 }
 
 #contact_icons .contact_icon {
