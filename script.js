@@ -15,5 +15,13 @@ function topFunction() {
     //document.documentElement.scrollTop = 0; // For IE and Firefox
 }
 
+window.addEventListener("pageshow", () => {
+    var fname = document.getElementById("fname");
+    var lname = document.getElementById("lname");
+    var message = document.getElementById("message");
+    fname.value = "";
+    lname.value = "";
+    message.value = "";
+});
 
 
